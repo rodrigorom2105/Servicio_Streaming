@@ -9,6 +9,10 @@ using namespace std;
 
 int main()
 {
+	vector<Video *> catalogoGeneral;	// catálogo polimórfico: películas + episodios
+	vector<Pelicula *> peliculas;			// solo películas
+	map<string, Serie *> seriesPorID; // acceso rápido a series y sus episodios por ID
+
 	int opc;
 	do
 	{
