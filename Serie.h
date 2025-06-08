@@ -13,6 +13,7 @@ public:
 	Serie(string id, string nombre);
 	void agregarEpisodio(Episodio *episodio);
 	void mostrarEpisoidios(double calificacionMinima = 0);
+	double obtenerCalificacionesPromedio() const;
 	string getNombre() const;
 	string getId() const;
 };

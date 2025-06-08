@@ -20,5 +20,33 @@ void Serie::mostrarEpisoidios(double calificacionMinima)
 	}
 }
 
+double Serie::obtenerCalificacionesPromedio() const
+{
+	if (episodios.empty())
+	{
+		return -1; // o 0.0 si prefieres evitar negativos
+	}
+
+	double suma = 0.0;
+	int contador = 0;
+
+	for (Episodio *ep : episodios)
+	{
+		double calif = ep->obtenerCalificacionPromedio();
+		if (calif != -1)
+		{ // considera solo episodios con calificaciones
+			suma += calif;
+			contador++;
+		}
+	}
+
+	if (contador == 0)
+	{
+		return -1; // ningún episodio tenía calificaciones
+	}
+
+	return suma / contador;
+}
+
 string Serie::getNombre() const { return nombre; }
 string Serie::getId() const { return id; }
