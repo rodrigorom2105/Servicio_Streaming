@@ -9,7 +9,7 @@ void Episodio::mostrarInformacion() const
 {
 	cout << "Episodio: " << titulo << " T" << temporada << "E" << numero << " (" << genero << ")";
 	double cal = obtenerCalificacionPromedio();
-	cout << " | Calificación: " << (cal == -1 ? "SC" : to_string(cal)) << endl;
+	cout << " | Calificacion: " << (cal == -1 ? "SC" : to_string(cal)) << endl;
 }
 
 string Episodio::getSerieId() const { return serieId; }

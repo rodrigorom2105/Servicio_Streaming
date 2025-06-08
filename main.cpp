@@ -14,12 +14,12 @@ int main()
 	{
 		cout << "\nMENU\n";
 		cout << "1. Cargar archivo de datos\n";
-		cout << "2. Mostrar videos con cierta calificación o género\n";
+		cout << "2. Mostrar videos con cierta calificacion o genero\n";
 		cout << "3. Mostrar episodios de una serie\n";
-		cout << "4. Mostrar películas con cierta calificación\n";
+		cout << "4. Mostrar peliculas con cierta calificacion\n";
 		cout << "5. Calificar un video\n";
 		cout << "0. Salir\n";
-		cout << "Opción: ";
+		cout << "Opcion: ";
 		cin >> opc;
 
 		if (opc == 1)
@@ -39,7 +39,7 @@ int main()
 		}
 		else if (opc != 0)
 		{
-			cout << "Opción no válida. Intente de nuevo." << endl;
+			cout << "Opcion no valida. Intente de nuevo." << endl;
 		}
 
 	} while (opc != 0);

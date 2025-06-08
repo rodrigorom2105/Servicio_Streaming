@@ -9,5 +9,5 @@ void Pelicula::mostrarInformacion() const
 {
 	cout << "Pelicula: " << titulo << " (" << genero << ", " << duracion << " min)";
 	double cal = obtenerCalificacionPromedio();
-	cout << " | Calificación: " << (cal == -1 ? "SC" : to_string(cal)) << endl;
+	cout << " | Calificacion: " << (cal == -1 ? "SC" : to_string(cal)) << endl;
 }
